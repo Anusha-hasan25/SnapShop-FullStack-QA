@@ -14,5 +14,5 @@ It is a complete e-commerce solution featuring a **React** frontend and a **Fast
 
 ## 🧪 Testing Documentation
 I have included a dedicated `testing/` folder that contains:
-- **Functional Test Suite:** 50 Test cases (Navigation, Logic, Database).
+- **Functional Test Suite:** 32 Test cases (Navigation, Logic, Database).
 - **Validation Logic:** BVA and Syntax checks for Checkout forms.
