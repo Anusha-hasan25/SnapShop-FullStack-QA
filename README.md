@@ -1,5 +1,5 @@
 # SnapShop: Full-Stack Jewelry E-Commerce with QA Suite
-SnapShop: A Full-Stack Jewelry E-commerce platform built with React &amp; FastAPI, featuring a comprehensive 50-point Functional Test Suite (Manual &amp; Integration Testing).
+SnapShop: A Full-Stack Jewelry E-commerce platform built with React &amp; FastAPI, featuring a comprehensive 32-point Functional Test Suite (Manual &amp; Integration Testing).
 It is a complete e-commerce solution featuring a **React** frontend and a **FastAPI** backend, integrated with an extensive **Functional Test Suite**.
 
 ## 🚀 Features
