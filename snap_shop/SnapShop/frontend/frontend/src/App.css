@@ -1,0 +1,158 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+:root {
+  --gold: #b8860b;
+  --black: #000000;
+  --nav-height: 160px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+/* FIX: Ensure no double padding */
+/* App.css */
+main {
+  padding-top: 10px; /* Ensures content is not hidden by fixed Navbar */
+}
+
+.cart-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+  padding: 20px 0;
+}
+
+.cart-summary {
+  background-color: #fafafa;
+  padding: 30px;
+  border: 1px solid #eee;
+}
+
+/* BLACK ANNOUNCEMENT BAR */
+.announcement-bar {
+  background-color: var(--black) !important;
+  color: #ffffff !important;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* SEARCH OVERLAY */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.search-bar-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+}
+
+/* EMPTY STATES */
+.empty-state {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.empty-state h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}/* src/App.css */
+.hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Sab images ko container ke andar rakhne ke liye */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Checkout page ki floating image ko control karne ke liye */
+.checkout-image-fix {
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+}/* --- LUXURY PAGE LAYOUT FIX --- */
+.cart-page, .wishlist-page {
+    padding: 180px 5% 80px !important; /* Navbar ke niche space */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.cart-container, .wishlist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- UNIVERSAL BUTTON FIX (White Text & No Blue Links) --- */
+.checkout-btn, 
+.continue-shopping-btn, 
+.shop-now-btn, 
+.add-to-bag-from-wish,
+.auth-action-btn {
+    background-color: #000000 !important; /* Pure Luxury Black */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* Remove Blue Links */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover, 
+.continue-shopping-btn:hover, 
+.shop-now-btn:hover,
+.add-to-bag-from-wish:hover {
+    background-color: #d4af37 !important; /* Gold Hover */
+    color: #ffffff !important;
+}
+
+/* --- GLOBAL LINK RESET --- */
+a, .cart-page a, .wishlist-page a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* --- PRODUCT IMAGE FIX --- */
+.item-image img, .wishlist-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* No more blurry blobs */
+}
+
+/* --- EMPTY STATE STYLING --- */
+.empty-cart-page, .empty-wishlist {
+    padding: 220px 5% 100px;
+    text-align: center;
+}

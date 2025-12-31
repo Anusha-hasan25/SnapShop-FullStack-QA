@@ -1,0 +1,97 @@
+.success-page {
+  padding: 180px 5% 100px !important;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #1a1a1a;
+}
+
+.success-container {
+  max-width: 850px;
+  width: 100%;
+  text-align: center;
+}
+
+.gold-icon { color: #C5A059; }
+
+.luxury-divider {
+  width: 60px;
+  height: 1px;
+  background-color: #C5A059;
+  margin: 40px auto;
+}
+
+.order-id-label {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.order-number {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 50px;
+}
+
+.success-description {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: #444;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto 60px;
+}
+
+/* THE BUTTON FIX */
+.continue-btn-black {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  
+  background-color: #000 !important; /* Pure Black Background */
+  color: #ffffff !important;         /* PURE WHITE TEXT - Fixes the black box issue */
+  
+  padding: 22px 50px !important;
+  text-decoration: none !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+  
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.continue-btn-black:hover {
+  background-color: #C5A059 !important; /* Luxury Gold Hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FOOTER FIX */
+.success-footer {
+  margin-top: 120px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 45px;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Big gap to prevent words from touching */
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+.luxury-dot {
+  color: #C5A059;
+  font-size: 16px;
+}

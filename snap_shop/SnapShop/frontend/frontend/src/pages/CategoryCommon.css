@@ -1,0 +1,97 @@
+/* src/pages/CategoryCommon.css */
+.category-container {
+  padding-top: 120px; /* Space for fixed navbar */
+  background: #fff;
+  min-height: 100vh;
+}
+
+.category-hero {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.category-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3); /* Dark overlay for text readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Specific Page Themes */
+.bridal-theme .category-hero { background-image: url('https://images.pexels.com/photos/2849743/pexels-photo-2849743.jpeg'); }
+.gold-theme .category-hero { background-image: url('https://images.pexels.com/photos/3641059/pexels-photo-3641059.jpeg'); }
+.silver-theme .category-hero { background-image: url('https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg'); background-position: top; }
+.diamond-theme .category-hero { background-image: url('https://images.pexels.com/photos/948431/pexels-photo-948431.jpeg'); }
+.men-theme .category-hero { background-image: url('https://images.pexels.com/photos/1616091/pexels-photo-1616091.jpeg'); }
+
+.category-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.category-hero p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 50px;
+  padding: 0 8% 100px;
+}
+
+.product-card {
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.img-box {
+  overflow: hidden;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.img-box img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  color: #b8860b;
+  font-weight: 500;
+  font-size: 15px;
+}

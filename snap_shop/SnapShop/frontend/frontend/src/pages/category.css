@@ -1,0 +1,105 @@
+.category-page {
+  padding: 140px 8% 80px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.category-count {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #888;
+}
+
+/* GRID LAYOUT */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.product-card {
+  text-decoration: none;
+  color: #000;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* QUICK VIEW OVERLAY */
+.quick-view {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: bottom 0.3s ease;
+}
+
+.product-card:hover .quick-view {
+  bottom: 0;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-details h3 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 15px;
+  color: #b8860b; /* Luxury Gold */
+}
+
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}

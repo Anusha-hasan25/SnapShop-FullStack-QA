@@ -1,0 +1,212 @@
+.wishlist-page {
+  padding: 160px 5% 80px;
+  background-color: #ffffff;
+  min-height: 80vh;
+}
+
+.wishlist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wishlist-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.wishlist-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-img-box {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.wishlist-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.wishlist-info {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.wishlist-info h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.wishlist-info p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.add-to-bag-from-wish {
+  margin-top: 15px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.empty-wishlist {
+  text-align: center;
+  padding: 200px 20px;
+}
+
+.empty-wishlist h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}/* --- UNIVERSAL BUTTON FIX --- */
+
+/* Checkout aur Start Shopping dono buttons ke liye */
+.checkout-btn, 
+.continue-shopping-btn,
+.auth-action-btn {
+    background-color: #000000 !important; /* Luxury Black */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* Blue link khatam */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px auto 0; /* Center align karne ke liye */
+}
+
+/* Hover par gold effect */
+.checkout-btn:hover, 
+.continue-shopping-btn:hover {
+    background-color: #d4af37 !important; /* Premium Gold */
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Wishlist aur Cart ke links ka blue color reset */
+.cart-page a, .wishlist-page a {
+    color: inherit !important;
+    text-decoration: none !important;
+}/* --- LUXURY PAGE LAYOUT FIX --- */
+.cart-page, .wishlist-page {
+    padding: 180px 5% 80px !important; /* Navbar ke niche space */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.cart-container, .wishlist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- UNIVERSAL BUTTON FIX (White Text & No Blue Links) --- */
+.checkout-btn, 
+.continue-shopping-btn, 
+.shop-now-btn, 
+.add-to-bag-from-wish,
+.auth-action-btn {
+    background-color: #000000 !important; /* Pure Luxury Black */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* Remove Blue Links */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover, 
+.continue-shopping-btn:hover, 
+.shop-now-btn:hover,
+.add-to-bag-from-wish:hover {
+    background-color: #d4af37 !important; /* Gold Hover */
+    color: #ffffff !important;
+}
+
+/* --- GLOBAL LINK RESET --- */
+a, .cart-page a, .wishlist-page a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* --- PRODUCT IMAGE FIX --- */
+.item-image img, .wishlist-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* No more blurry blobs */
+}
+
+/* --- EMPTY STATE STYLING --- */
+.empty-cart-page, .empty-wishlist {
+    padding: 220px 5% 100px;
+    text-align: center;
+}

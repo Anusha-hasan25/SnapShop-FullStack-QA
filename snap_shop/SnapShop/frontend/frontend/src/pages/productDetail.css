@@ -1,0 +1,161 @@
+/* --- LUXURY PAGE WRAPPER --- */
+.product-detail-page {
+  padding: 160px 5% 100px; /* Spacing barha di hai luxury feel ke liye */
+  background-color: #ffffff;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- MINIMALIST BREADCRUMB --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Swarovski style wide spacing */
+  margin-bottom: 50px;
+  color: #999;
+  font-weight: 500;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover { color: #000; }
+
+/* --- GRID LAYOUT --- */
+.detail-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 100px; /* Wider gap for breathability */
+  align-items: start;
+}
+
+/* --- IMAGE SECTION --- */
+.main-product-image {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  background-color: #f7f7f7; /* Very light gray for jewelry pop */
+  border: 1px solid #f0f0f0;
+  transition: transform 0.8s ease;
+}
+
+/* --- BRANDING & TITLES --- */
+.brand-name {
+  font-size: 11px;
+  letter-spacing: 5px; /* Ultra-wide spacing */
+  font-weight: 700;
+  color: #C5A059; /* Elegant Swarovski Gold */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.detail-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.detail-price {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+/* --- DESCRIPTION --- */
+.detail-description {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 50px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 35px;
+  font-weight: 300;
+}
+
+/* --- PURCHASE ACTIONS (Sleek) --- */
+.purchase-actions {
+  display: flex;
+  flex-direction: column; /* Swarovski usually stacks them for impact */
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: #222;
+  letter-spacing: 5px; /* Subtle hover effect */
+}
+
+/* --- SWAROVSKI HEART ICON POSITIONING --- */
+.swarovski-heart-btn {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* --- MINIMALIST TRUST BADGES --- */
+.trust-badges {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 968px) {
+  .detail-container { grid-template-columns: 1fr; gap: 50px; }
+  .product-detail-page { padding-top: 120px; }
+  .detail-title { font-size: 2.5rem; }
+}
+
+/* --- ANIMATION --- */
+.product-info-details {
+  animation: fadeInRight 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}

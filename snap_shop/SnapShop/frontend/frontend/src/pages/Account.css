@@ -1,0 +1,87 @@
+/* Form Specific Styles */
+.auth-form-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.auth-input-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-input-group label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.auth-input-group input {
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.auth-input-group input:focus {
+    border-color: #d4af37; /* Gold focus */
+}
+
+.forgot-pass-wrapper {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.forgot-pass-wrapper button {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.auth-action-btn {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    transition: all 0.3s;
+}
+
+.auth-action-btn:hover {
+    background-color: #d4af37; /* Gold hover */
+}
+
+.auth-toggle-footer {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 30px;
+}
+
+.auth-toggle-footer p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.auth-toggle-footer button {
+    margin-left: 10px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    .auth-form-container { padding: 10px; }
+}

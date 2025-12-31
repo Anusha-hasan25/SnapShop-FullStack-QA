@@ -1,0 +1,411 @@
+/* --- MAIN PAGE LAYOUT --- */
+.cart-page {
+  padding: 160px 5% 80px; /* High top padding to clear the fixed Navbar */
+  background-color: #fff;
+  min-height: 100vh;
+}
+/* --- SWAROVSKI GOLD BUTTON FIX --- */
+.checkout-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 0;
+  background-color: transparent !important; /* Black background khatam */
+  border: 1px solid #C5A059 !important; /* Luxury Gold Border */
+  color: #C5A059 !important; /* Gold Text color */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #C5A059 !important; /* Hover par gold fill */
+  color: #ffffff !important; /* Text white on hover */
+}
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+/* --- CART LAYOUT: ITEMS + SUMMARY --- */
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px; /* Item list left, Summary right */
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* --- INDIVIDUAL ITEM CARD --- */
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-item-card {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-image {
+  width: 140px;
+  height: 140px;
+  background: #f9f9f9;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-header h3 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.remove-item:hover {
+  color: #000;
+}
+
+.item-category {
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+}
+
+.qty-controls button {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-controls span {
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* --- ORDER SUMMARY SIDEBAR --- */
+.cart-summary {
+  background-color: #f9f9f9;
+  padding: 35px;
+  position: sticky;
+  top: 160px; /* Keeps summary visible while scrolling items */
+}
+
+.cart-summary h3 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.free-text {
+  color: #228b22;
+  font-weight: 600;
+}
+
+.summary-row.total {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  transition: opacity 0.3s;
+}
+
+.checkout-btn:hover {
+  opacity: 0.8;
+}
+
+/* --- EMPTY CART STYLING --- */
+.empty-cart-page {
+  padding: 200px 5%;
+  text-align: center;
+}
+
+.empty-cart-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.empty-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 30px 0 15px;
+}
+
+.empty-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.continue-shopping-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1024px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+  .cart-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-item-card {
+    flex-direction: column;
+  }
+  .item-image {
+    width: 100%;
+    height: 250px;
+  }
+}/* --- UNIVERSAL BUTTON FIX --- */
+
+/* Checkout aur Start Shopping dono buttons ke liye */
+.checkout-btn, 
+.continue-shopping-btn,
+.auth-action-btn {
+    background-color: #000000 !important; /* Luxury Black */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* Blue link khatam */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px auto 0; /* Center align karne ke liye */
+}
+
+/* Hover par gold effect */
+.checkout-btn:hover, 
+.continue-shopping-btn:hover {
+    background-color: #d4af37 !important; /* Premium Gold */
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Wishlist aur Cart ke links ka blue color reset */
+.cart-page a, .wishlist-page a {
+    color: inherit !important;
+    text-decoration: none !important;
+}/* --- LUXURY PAGE LAYOUT FIX --- */
+.cart-page, .wishlist-page {
+    padding: 180px 5% 80px !important; /* Navbar ke niche space */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.cart-container, .wishlist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- UNIVERSAL BUTTON FIX (White Text & No Blue Links) --- */
+.checkout-btn, 
+.continue-shopping-btn, 
+.shop-now-btn, 
+.add-to-bag-from-wish,
+.auth-action-btn {
+    background-color: #000000 !important; /* Pure Luxury Black */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* Remove Blue Links */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover, 
+.continue-shopping-btn:hover, 
+.shop-now-btn:hover,
+.add-to-bag-from-wish:hover {
+    background-color: #d4af37 !important; /* Gold Hover */
+    color: #ffffff !important;
+}
+
+/* --- GLOBAL LINK RESET --- */
+a, .cart-page a, .wishlist-page a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* --- PRODUCT IMAGE FIX --- */
+.item-image img, .wishlist-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* No more blurry blobs */
+}
+
+/* --- EMPTY STATE STYLING --- */
+.empty-cart-page, .empty-wishlist {
+    padding: 220px 5% 100px;
+    text-align: center;
+}/* --- LUXURY LAYOUT & BUTTON FIX --- */
+
+.cart-page, .wishlist-page {
+    padding: 180px 5% 80px !important; /* Navbar ke niche space dene ke liye */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* --- THE WHITE TEXT BUTTON FIX --- */
+.checkout-btn, 
+.continue-shopping-btn, 
+.shop-now-btn, 
+.add-to-bag-from-wish,
+.auth-action-btn {
+    background-color: #000000 !important; /* Luxury Black Background */
+    color: #ffffff !important;           /* Force White Text */
+    text-decoration: none !important;    /* No Blue Underline */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px auto 0;
+}
+
+/* Gold hover effect for premium feel */
+.checkout-btn:hover, 
+.continue-shopping-btn:hover,
+.shop-now-btn:hover {
+    background-color: #d4af37 !important; 
+    color: #ffffff !important;
+}
+
+/* Fix for blue underlined links on product pages */
+a, .cart-page a, .wishlist-page a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Image scaling fix to avoid blurry blobs */
+.item-image img, .wishlist-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

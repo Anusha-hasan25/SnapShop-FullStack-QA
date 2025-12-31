@@ -1,0 +1,89 @@
+.terms-page-wrapper {
+  padding: 160px 5% 100px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-container {
+  max-width: 850px;
+  width: 100%;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 80px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 40px;
+}
+
+.terms-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.last-updated {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.terms-section {
+  margin-bottom: 50px;
+}
+
+.terms-section h2 {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-left: 3px solid #d4af37; /* Gold accent */
+  padding-left: 15px;
+}
+
+.terms-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+.terms-footer {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.terms-footer p {
+  font-size: 12px;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.contact-email {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .terms-header h1 { font-size: 2rem; }
+  .terms-page-wrapper { padding-top: 120px; }
+}

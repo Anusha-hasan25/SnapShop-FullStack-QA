@@ -1,0 +1,30 @@
+import React, { useEffect } from 'react';
+import { ALL_PRODUCTS } from '../../data/product'; // Path check karlein products.js
+import ProductGrid from '../../components/ProductGrid';
+import "../Collection.css";
+import "../info/InfoPages.css";
+
+const MenCollection = () => {
+  const menItems = ALL_PRODUCTS.filter(item => item.category === 'men');
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  return (
+    <div className="info-page-wrapper"> {/* Navbar overlap fix */}
+      <div className="info-container">
+        <header className="info-header text-center">
+          <h1 className="serif italic">Men's Collection</h1>
+          <p className="text-[11px] tracking-[4px] uppercase text-gray-900 font-bold">
+            Bold statements for the modern gentleman
+          </p>
+        </header>
+        <div className="mt-16">
+          <ProductGrid products={menItems} />
+        </div>
+        <footer className="info-footer mt-20">
+          <p className="serif italic text-xl tracking-[10px] uppercase">SNAPSHOP 💎</p>
+        </footer>
+      </div>
+    </div>
+  );
+};
+export default MenCollection;

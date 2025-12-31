@@ -1,0 +1,68 @@
+/* Collection.css */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-image-container {
+    background-color: #f9f9f9;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-info h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-decoration: none; /* Blue line khatam karne ke liye */
+}
+
+.price {
+    font-weight: 700;
+    font-size: 14px;
+    color: #d4af37; /* Luxury Gold color */
+}/* --- SWAROVSKI STYLE HEART ICON --- */
+.swarovski-heart-btn {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  cursor: pointer;
+}
+
+.swarovski-heart-btn:hover {
+  transform: scale(1.1);
+  background: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.swarovski-heart-btn.is-active {
+  color: #e63946; /* Swarovski Red */
+  background: #fff5f5;
+  border-color: #ffe3e3;
+}
